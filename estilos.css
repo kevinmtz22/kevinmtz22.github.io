@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background: rgb(80,78,78);
+    background: linear-gradient(90deg, rgba(80,78,78,1) 21%, rgba(28,30,40,1) 82%);
+}
+#keavin{
+    width: 100%;
+    height: 800px;
+    background-color: blanchedalmond; 
+}
+nav{
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin-top: 10px;
+  }
+nav a{
+    width: 40px;
+    height: 10px;
+    margin-right: 30px;
+    padding: 10px 2px;
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif ;
+    font-size: 1.4rem;
+    color: whitesmoke;
+    transition: linear .2s;
+}
+nav a:hover{
+    border-radius: 20px;
+    margin: 0px auto;
+    border-radius: 10px; 
+    background: rgba(255, 255, 255,.30);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135, .37);
+    backdrop-filter: blur(20px);
+    padding: 25px 15px;
+}
+nav,#logo{
+    display: inline-block;
+}
+#titulo{
+    width: 100%;
+    height: 800px;
+    padding: 0%;
+    text-align: center;
+    border: 0ch;
+    margin: 0px auto;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+#nombre{
+    vertical-align: middle;
+    width: 100%;
+    height: 800px;
+    margin: 0px auto;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+h1{
+    margin: 0px;
+    color: whitesmoke;    
+    font-size: 120px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition-property: text-shadow;
+	transition-duration: 1s;
+	transition-delay: ease;
+}
+h1:hover{
+    text-shadow: 1px 1px rgba(208, 24, 24, 0.614), 2px 2px rgba(208, 24, 24, 0.614) ,3px 3px rgba(208, 24, 24, 0.614),4px 4px rgb(33, 155, 188),5px 5px rgb(33, 155, 188),6px 6px rgb(33, 155, 188),7px 7px rgb(33, 155, 188),8px 8px rgb(140, 25, 140),9px 9px rgb(140, 25, 140),10px 10px rgb(140, 25, 140),11px 11px rgb(140, 25, 140),12px 12px rgb(140, 25, 140);
+}
+h3{
+    margin: 0px;
+    padding-top: 4rem;
+    color: blanchedalmond;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: right;
+    border: solid whitesmoke 1px;
+    transition: linear .2s;
+}
+#logo:hover{
+    border-radius: 50%;
+    transition: all .2s ease-out;
+    transform: rotate(360deg);
+}
+
+#logocentro{
+    width: 300px;
+    height: 300px;
+    transition: linear .2s;
+    border: solid whitesmoke 2px;
+}
+#logocentro:hover{
+    border-radius: 50%;
+    transition: all .2s ease-out;
+    transform: rotate(360deg);
+}
+
+
+
+.quiensoy{
+    width: 400px;
+    height: 400px;
+    margin: 0px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor:move;
+    transition: linear .2s;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+.quiensoy:hover{
+    border-radius: 50%;
+}
+
+  .quiensoy .mask, .quiensoy .content{
+    width: 400px;
+    height: 400px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    overflow: hidden;
+    transition: linear .2s;
+  }
+  .quiensoy img{
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    transition: linear .2s;
+    border-radius: 25%;
+    border: solid rgb(37,35,98) 5px;
+  }
+  .quiensoy img:hover{
+      border-radius: 50%;
+  }
+  .quiensoy h2{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-transform: uppercase; /*propiedad para poner toda las letras en mayuscula*/
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    padding: 0px;
+    background-color: #7424aa;
+    margin: 0px 0px 80px 0px;
+    transition: linear .2s;
+  }
+  
+  .quiensoy p{
+    font-family: 'Kdam Thmor Pro', sans-serif ;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 20px 20px;
+    transition: linear .2s;
+  }
+  
+  .quiensoy img{
+
+    transition: all .2 ease-in-out;
+    -moz-transition: all .2 ease-in-out;
+    -webkit-transition: all .2 ease-in-out;
+    -o-transition: all .2 ease-in-out;
+    -ms-transition: all .2 ease-in-out;
+
+  }
+  .quiensoy .mask{
+    opacity: 0; 
+    width: 400px;
+    height: 400px;
+    background-color: hsla(249, 6%, 25%, 0.536);
+    transition: all .4 ease-in;
+    -moz-transition: all .4 ease-in;
+    -webkit-transition: all .4 ease-in;
+    -o-transition: all .4 ease-in;
+    -ms-transition: all .4 ease-in;
+  }
+  .quiensoy h2{
+    opacity: 0;
+    transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    -ms-transform: translateY(-100px); 
+  }
+  .quiensoy p{
+    opacity: 0;
+    transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+  }
+  
+  .quiensoy:hover img{
+    border-radius: 50%;
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+  }
+  .quiensoy:hover .mask{
+    opacity: 4;
+  }
+  .quiensoy:hover h2,
+  .quiensoy:hover p,
+  .quiensoy:hover a.info{
+    opacity: 1;
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    /*agregar navegadores*/
+  }
+  .quiensoy:hover p{
+    transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -webkit-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    -ms-transition-delay: .4s;
+    /*agregar navegadores*/
+  }
+
+
+
+
+
+.descripción, .quiensoy{
+    display: inline-block;
+}
+.descripcion{
+    width: 800px;
+    height: 800px;
+    float:right;
+}
+#informacion{
+    width: 600px;
+    height: 300px;
+    margin: 50px 100px 100px 100px;
+    background: rgba(255, 255, 255,.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135, .37);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px #030303;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif ;
+    margin-bottom: 50px;
+    padding-right:  70px;
+    padding-left:  70px;
+    
+}
+#informacion2{
+    width: 600px;
+    height: 300px;
+    margin: 50px 100px 100px 100px;
+    background: rgba(255, 255, 255,.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135, .37);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px #030303;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif ;
+    margin-bottom: 100px;
+    padding-right:  70px;
+    padding-left:  70px;
+}
+
+
+
+
+li{
+    text-align: left;
+    padding-left: 70px;
+}
+.servicios{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background: url(http://placeimg.com/1920/1080/tech) no-repeat fixed;
+}
+#serv{
+    width: 50%;
+    height: 800px;
+    background: rgba(255, 255, 255,.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135, .15);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    float: left;
+}
+.sip{
+    padding: 70px;
+}
+h4{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.descripcion h2{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-transform: uppercase; /*propiedad para poner toda las letras en mayuscula*/
+    color: #fff;
+    text-align: center;
+}
+.sip li{
+    font-size: 30px;
+    font-family: 'Kdam Thmor Pro', sans-serif ;
+    transition: linear .2s;
+}
+.sip li:hover{
+    font-size: 35px;
+}
+#serv,#imagen{
+    display: inline-block;
+}
+#imagen{
+    width: 50%;
+    height: 800px;
+    float: right;
+}
+#nono{
+    height: 600px;
+    margin: 100px 100px 100px 100px;
+    background: rgba(255, 255, 255,.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135, .15);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 40px;
+}
+#img{
+    width: 500px;
+    height: 500px;
+    border-radius: 40px;
+    background: url(http://placeimg.com/500/500/tech) no-repeat ;
+    transition: linear.2s;
+}
+
+#img:hover{
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+#perfil{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+#cosas{
+    width: 50%;
+    height: 800px;
+    background: rgba(255, 255, 255,.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135, .15);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    float: right;
+    overflow: hidden;
+}
+.mas{
+    padding: 70px;
+}
+.mas li{
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif ;
+    transition: linear .2s;
+}
+.mas li:hover{
+    font-size: 25px;
+}
+.cosas, #video{
+    display: inline-block;
+}
+
+
+#video{
+    width: 50%;
+    height: 800px;
+    float: left;
+}
+#vivi{
+    height: 600px;
+    margin: 100px 100px 100px 100px;
+    background: rgba(255, 255, 255,.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135, .15);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 40px;
+}
+#otravez{
+    width: 500px;
+    height: 500px;
+    
+}
+
+
+
+
+#seccionlogo{
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    background: url(http://placeimg.com/1920/1080/tech) no-repeat fixed;
+}
+
+#yamecanse{
+    width: 50%;
+    height: 800px;
+    background: rgba(255, 255, 255,.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135, .15);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    float: left;
+    overflow: hidden;
+}
+.dormir{
+    padding: 70px;
+}
+
+.dormir li{
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif ;
+}
+#azul:hover{
+    color: blue;
+}
+#rojo:hover{
+    color: red;
+}
+#morado:hover{
+    color: #3a1254;
+}
+
+.dormir, #oladios{
+    display: inline-block;
+}
+
+
+#oladios{
+    width: 50%;
+    height: 800px;
+    float: right;
+}
+#yamero{
+    height: 600px;
+    margin: 100px 100px 100px 100px;
+    background: rgba(255, 255, 255,.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135, .15);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 40px;
+}
+#logoyacasi{
+    width: 500px;
+    height: 500px;
+    
+    transition: linear .2s;
+}
+#logoyacasi:hover{
+    border-radius: 50%;
+    transition: all .2s ease-out;
+    transform: rotate(360deg);
+}
+.dormir p{
+    font-size: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif ;
+}
+.dormir li{
+    transition: linear .2s;
+}
+.dormir li:hover{
+    font-size: 25px;
+}
+
+footer{
+    width: 100%;
+    height: 325px;
+    background-color: black;
+    overflow: hidden;
+    color: blanchedalmond;
+}
+#face{
+    margin: 0px 0px 40px 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#insta{
+    margin: 0px 0px 40px 345px;
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+}
+#tel{
+    margin: 0px 0px 40px 450px;
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+}
+footer p{
+    text-align: right;
+    color: bisque;
+    margin-right: 80px;
+    display: inline-block;
+    margin-left: 240px;
+    margin-right: 170px;
+}
+footer p:hover{
+    color:dimgrey;
+}
+#num{
+    margin-left: 320px;
+    margin-right: 0px;
+}
+footer h3{
+    padding-top: 10px;
+}
+#vivi p{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: blanchedalmond;
+    text-align: center;
+    transition: linear .4s;
+}
+#vivi p:hover{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
